@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Asia Cansler
+# DATE: October 7, 2025
+# BRIEF DESCRIPTION: A program to convert from Celsius to Fahrenheit or from Fahrenheit to Celsius.
 
 
 
@@ -15,14 +15,27 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+  converter()
 
+def converter():
+  print('===== Temperature Converter =====')
+  print()
+  print('  1. Convert from Celsius to Fahrenheit')
+  print('  2. Convert from Fahrenheit to Celsius')
+  print()
 
+  choice = int(input('Please choose from the above menu: '))
+  temp = int(input('Enter a temperature to convert: '))
 
+  print()
+  if choice == 1:
+    print(f'{temp:.1f} degrees Celsius is {temp * 9/5 +32} degrees Fahrenheit.')
 
+  else:
+    print(f'{temp:.1f} degrees Fahrenheit is {(temp - 32)  * 5/9} degrees Celsius.')
 
-
-
-
+main()
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -93,7 +106,9 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-
+I learned more about how math works in Python.
+I thought the conversion from Farenheit to Celsius would be tricky, 
+but it worked exactly as expected.
 
 
 
